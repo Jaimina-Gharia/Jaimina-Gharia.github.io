@@ -138,7 +138,7 @@ const Hero = () => {
               animate-float animation-delay-2000">
               <span className="font-sans font-medium text-xs md:text-sm
                 text-scientific-teal/75 tracking-wider uppercase">
-                Metabolomics
+                Bioinformatics
               </span>
             </div>
 
@@ -151,7 +151,7 @@ const Hero = () => {
               animate-float animation-delay-4000">
               <span className="font-sans font-medium text-[10px] md:text-xs
                 text-scientific-teal/70 tracking-wider uppercase">
-                Bioinformatics
+                Metabolomics
               </span>
             </div>
 
