@@ -3,7 +3,7 @@ import { profileData } from '../data/profile';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[95vh] flex items-center justify-center pt-20 overflow-hidden snap-start scroll-mt-20">
+    <section id="home" className="relative min-h-[95vh] flex items-center justify-center pt-20 overflow-hidden scroll-mt-32">
       
       {/* Soft floating background elements to bring back the Carrd layered feel */}
       <div className="absolute top-1/4 -right-12 w-64 h-64 bg-scientific-blue rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob"></div>
@@ -49,29 +49,37 @@ const Hero = () => {
         </div>
         
         {/* Subtle Visual Composition Area */}
-        <div className="flex justify-center items-center h-full min-h-[400px] mt-8 md:mt-0">
-          <div className="relative w-full max-w-md aspect-square">
-            
-            {/* NEUROSCIENCE: Largest, most prominent */}
-            <div className="absolute top-[10%] right-[10%] w-56 h-56 md:w-64 md:h-64 bg-white/70 backdrop-blur-md border border-white/60 rounded-full shadow-lg flex items-center justify-center text-center p-6 z-40 transform transition-transform duration-1000 hover:scale-105 animate-float">
-              <span className="font-serif text-xl md:text-2xl text-scientific-teal tracking-wide">Neuroscience</span>
-            </div>
-            
-            {/* MOLECULAR BIOLOGY: Second largest, upper-left */}
-            <div className="absolute top-[5%] left-[5%] w-44 h-44 md:w-48 md:h-48 bg-scientific-lavender/40 backdrop-blur-sm border border-white/50 rounded-full shadow-md flex items-center justify-center text-center p-4 z-30 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-2000">
+        <div className="flex flex-col items-center justify-center gap-1 md:gap-2 mt-12 md:mt-0 w-full h-full min-h-[400px]">
+          
+          {/* Top Row */}
+          <div className="flex justify-center w-full pl-0 md:-ml-24">
+            {/* MOLECULAR BIOLOGY: Second largest */}
+            <div className="w-36 h-36 md:w-44 md:h-44 bg-scientific-lavender/40 backdrop-blur-sm border border-white/50 rounded-full shadow-md flex items-center justify-center text-center p-4 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-2000">
               <span className="font-sans font-medium text-sm md:text-base text-scientific-teal/90 tracking-wider uppercase">Molecular<br/>Biology</span>
             </div>
+          </div>
+          
+          {/* Middle Row */}
+          <div className="flex flex-row justify-center items-center gap-2 md:gap-3 w-full">
             
-            {/* CELL BIOLOGY: Medium size, lower-left */}
-            <div className="absolute bottom-[10%] left-[10%] w-36 h-36 md:w-40 md:h-40 bg-scientific-blue/30 backdrop-blur-sm border border-white/40 rounded-full shadow flex items-center justify-center text-center p-4 z-20 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-4000">
+            {/* CELL BIOLOGY: Medium size */}
+            <div className="w-32 h-32 md:w-40 md:h-40 bg-scientific-blue/30 backdrop-blur-sm border border-white/40 rounded-full shadow flex items-center justify-center text-center p-4 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-4000">
               <span className="font-sans font-medium text-xs md:text-sm text-scientific-teal/80 tracking-wider uppercase">Cell<br/>Biology</span>
             </div>
             
-            {/* ONCOLOGY: Medium size, lower-right */}
-            <div className="absolute bottom-[15%] right-[15%] w-36 h-36 md:w-40 md:h-40 bg-scientific-rose/30 backdrop-blur-sm border border-white/40 rounded-full shadow flex items-center justify-center text-center p-4 z-20 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-2000">
-              <span className="font-sans font-medium text-xs md:text-sm text-scientific-teal/80 tracking-wider uppercase">Oncology</span>
+            {/* NEUROSCIENCE: Largest, most prominent */}
+            <div className="w-48 h-48 md:w-64 md:h-64 bg-white/70 backdrop-blur-md border border-white/60 rounded-full shadow-lg flex items-center justify-center text-center p-6 transform transition-transform duration-1000 hover:scale-105 animate-float">
+              <span className="font-serif text-xl md:text-2xl text-scientific-teal tracking-wide">Neuroscience</span>
             </div>
             
+          </div>
+          
+          {/* Bottom Row */}
+          <div className="flex justify-center w-full pr-0 md:-mr-40">
+            {/* ONCOLOGY: Medium size */}
+            <div className="w-32 h-32 md:w-40 md:h-40 bg-scientific-rose/30 backdrop-blur-sm border border-white/40 rounded-full shadow flex items-center justify-center text-center p-4 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-2000">
+              <span className="font-sans font-medium text-xs md:text-sm text-scientific-teal/80 tracking-wider uppercase">Oncology</span>
+            </div>
           </div>
         </div>
         

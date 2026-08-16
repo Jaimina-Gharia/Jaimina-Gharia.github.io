@@ -77,7 +77,7 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 snap-start scroll-mt-20">
+    <section id="projects" className="py-24 scroll-mt-32">
       <div className="max-w-5xl mx-auto px-6 md:px-12">
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-serif text-scientific-teal mb-4">Selected Projects</h2>

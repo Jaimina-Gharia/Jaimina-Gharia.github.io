@@ -3,7 +3,7 @@ import { educationData } from '../data/education';
 
 const Education = () => {
   return (
-    <section id="education" className="py-20 relative snap-start scroll-mt-20">
+    <section id="education" className="py-20 relative scroll-mt-32">
       <div className="max-w-5xl mx-auto px-6 md:px-12">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-serif text-scientific-teal mb-4">Education</h2>
