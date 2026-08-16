@@ -3,7 +3,7 @@ import { profileData } from '../data/profile';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[95vh] flex items-center justify-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-[95vh] flex items-center justify-center pt-20 overflow-hidden snap-start scroll-mt-20">
       
       {/* Soft floating background elements to bring back the Carrd layered feel */}
       <div className="absolute top-1/4 -right-12 w-64 h-64 bg-scientific-blue rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob"></div>
@@ -38,7 +38,9 @@ const Hero = () => {
               Explore Research
             </button>
             <a 
-              href={profileData.resumeLink}
+              href="/Jaimina_Gharia_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3.5 bg-white border border-scientific-teal/20 text-scientific-teal rounded-full font-medium hover:bg-scientific-rose/10 hover:border-scientific-rose transition-all text-center text-sm shadow-sm"
             >
               View CV
@@ -47,15 +49,29 @@ const Hero = () => {
         </div>
         
         {/* Subtle Visual Composition Area */}
-        <div className="hidden md:flex justify-center items-center h-full min-h-[400px]">
-          <div className="relative w-full max-w-sm aspect-square">
-            {/* Elegant abstract shapes to replace missing image and provide visual interest */}
-            <div className="absolute inset-0 bg-white/40 backdrop-blur-md border border-white/60 rounded-full shadow-lg transform rotate-3 hover:rotate-6 transition-transform duration-700"></div>
-            <div className="absolute inset-4 bg-scientific-lavender/30 backdrop-blur-md rounded-full border border-white/50 transform -rotate-3 hover:-rotate-6 transition-transform duration-700"></div>
-            <div className="absolute inset-12 bg-scientific-rose/20 rounded-full flex flex-col items-center justify-center text-center p-8 border border-white/40 shadow-inner">
-              <span className="font-serif italic text-2xl text-scientific-teal/70 mb-2">Cellular</span>
-              <span className="font-serif italic text-2xl text-scientific-teal/70">Signaling</span>
+        <div className="flex justify-center items-center h-full min-h-[400px] mt-8 md:mt-0">
+          <div className="relative w-full max-w-md aspect-square">
+            
+            {/* NEUROSCIENCE: Largest, most prominent */}
+            <div className="absolute top-[10%] right-[10%] w-56 h-56 md:w-64 md:h-64 bg-white/70 backdrop-blur-md border border-white/60 rounded-full shadow-lg flex items-center justify-center text-center p-6 z-40 transform transition-transform duration-1000 hover:scale-105 animate-float">
+              <span className="font-serif text-xl md:text-2xl text-scientific-teal tracking-wide">Neuroscience</span>
             </div>
+            
+            {/* MOLECULAR BIOLOGY: Second largest, upper-left */}
+            <div className="absolute top-[5%] left-[5%] w-44 h-44 md:w-48 md:h-48 bg-scientific-lavender/40 backdrop-blur-sm border border-white/50 rounded-full shadow-md flex items-center justify-center text-center p-4 z-30 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-2000">
+              <span className="font-sans font-medium text-sm md:text-base text-scientific-teal/90 tracking-wider uppercase">Molecular<br/>Biology</span>
+            </div>
+            
+            {/* CELL BIOLOGY: Medium size, lower-left */}
+            <div className="absolute bottom-[10%] left-[10%] w-36 h-36 md:w-40 md:h-40 bg-scientific-blue/30 backdrop-blur-sm border border-white/40 rounded-full shadow flex items-center justify-center text-center p-4 z-20 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-4000">
+              <span className="font-sans font-medium text-xs md:text-sm text-scientific-teal/80 tracking-wider uppercase">Cell<br/>Biology</span>
+            </div>
+            
+            {/* ONCOLOGY: Medium size, lower-right */}
+            <div className="absolute bottom-[15%] right-[15%] w-36 h-36 md:w-40 md:h-40 bg-scientific-rose/30 backdrop-blur-sm border border-white/40 rounded-full shadow flex items-center justify-center text-center p-4 z-20 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-2000">
+              <span className="font-sans font-medium text-xs md:text-sm text-scientific-teal/80 tracking-wider uppercase">Oncology</span>
+            </div>
+            
           </div>
         </div>
         

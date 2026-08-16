@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const links = ['About', 'Research', 'Projects', 'Skills', 'Publications', 'Contact'];
+  const links = ['About', 'Education', 'Research', 'Publications', 'Projects', 'Skills', 'Contact'];
 
   const scrollTo = (id) => {
     const el = document.getElementById(id.toLowerCase());

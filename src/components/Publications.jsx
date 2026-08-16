@@ -5,7 +5,7 @@ const Publications = () => {
   if (!publicationsData || publicationsData.length === 0) return null;
 
   return (
-    <section id="publications" className="py-24">
+    <section id="publications" className="py-24 snap-start scroll-mt-20">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <div className="mb-12 text-center">
           <h2 className="text-4xl font-serif text-scientific-teal mb-4">Publications</h2>

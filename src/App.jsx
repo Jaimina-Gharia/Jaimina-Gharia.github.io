@@ -21,9 +21,9 @@ function App() {
         <About />
         <Education />
         <ResearchExperience />
+        <Publications />
         <Projects />
         <Skills />
-        <Publications />
         <Presentations />
         <Achievement />
         <Contact />

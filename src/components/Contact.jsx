@@ -3,7 +3,7 @@ import { profileData } from '../data/profile';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-32 bg-scientific-teal text-white relative overflow-hidden">
+    <section id="contact" className="py-32 bg-scientific-teal text-white relative overflow-hidden snap-start scroll-mt-20">
       {/* Background blobs for softness even in the dark section */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-scientific-blue/10 rounded-full mix-blend-screen filter blur-3xl opacity-50 pointer-events-none"></div>
       
