@@ -48,8 +48,10 @@ const Hero = () => {
           </div>
         </div>
         
+        
         {/* Subtle Visual Composition Area */}
-        <div className="flex flex-col items-center justify-center gap-1 md:gap-2 mt-12 md:mt-0 w-full h-full min-h-[400px]">
+        <template> 
+          <div className="flex flex-col items-center justify-center gap-1 md:gap-2 mt-12 md:mt-0 w-full h-full min-h-[400px]">
           
           {/* Top Row */}
           <div className="flex justify-center w-full pl-0 md:-ml-24">
@@ -80,6 +82,92 @@ const Hero = () => {
             <div className="w-32 h-32 md:w-40 md:h-40 bg-scientific-rose/30 backdrop-blur-sm border border-white/40 rounded-full shadow flex items-center justify-center text-center p-4 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-2000">
               <span className="font-sans font-medium text-xs md:text-sm text-scientific-teal/80 tracking-wider uppercase">Oncology</span>
             </div>
+          </div>
+         </div>
+         </template>
+        
+        {/* Research Interests Visual Composition */}
+        <div className="flex items-center justify-center w-full h-full min-h-[480px] mt-12 md:mt-0">
+          <div className="relative w-[500px] h-[500px] max-w-full">
+
+            {/* MOLECULAR BIOLOGY — prominent */}
+            <div className="absolute top-4 left-[180px] w-36 h-36 md:w-44 md:h-44
+              bg-scientific-lavender/40 backdrop-blur-sm
+              border border-white/50 rounded-full shadow-md
+              flex items-center justify-center text-center p-4
+              transition-transform duration-700 hover:scale-105
+              animate-float animation-delay-2000">
+              <span className="font-sans font-medium text-sm md:text-base
+                text-scientific-teal/90 tracking-wider uppercase">
+                Molecular<br />Biology
+              </span>
+            </div>
+
+            {/* CELL BIOLOGY — medium-large */}
+            <div className="absolute top-[145px] left-10 w-32 h-32 md:w-40 md:h-40
+              bg-scientific-blue/30 backdrop-blur-sm
+              border border-white/40 rounded-full shadow
+              flex items-center justify-center text-center p-4
+              transition-transform duration-700 hover:scale-105
+              animate-float animation-delay-4000">
+              <span className="font-sans font-medium text-xs md:text-sm
+                text-scientific-teal/80 tracking-wider uppercase">
+                Cell<br />Biology
+              </span>
+            </div>
+
+            {/* NEUROSCIENCE — largest / primary interest */}
+            <div className="absolute top-[120px] left-[190px] w-52 h-52 md:w-64 md:h-64
+              bg-white/75 backdrop-blur-md
+              border border-white/60 rounded-full shadow-lg
+              flex items-center justify-center text-center p-6
+              transition-transform duration-700 hover:scale-105
+              animate-float">
+              <span className="font-serif text-xl md:text-2xl
+                text-scientific-teal tracking-wide">
+                Neuroscience
+              </span>
+            </div>
+
+            {/* METABOLOMICS — medium */}
+            <div className="absolute top-[315px] left-[85px] w-28 h-28 md:w-36 md:h-36
+              bg-scientific-lavender/25 backdrop-blur-sm
+              border border-white/40 rounded-full shadow
+              flex items-center justify-center text-center p-4
+              transition-transform duration-700 hover:scale-105
+              animate-float animation-delay-2000">
+              <span className="font-sans font-medium text-xs md:text-sm
+                text-scientific-teal/75 tracking-wider uppercase">
+                Metabolomics
+              </span>
+            </div>
+
+            {/* BIOINFORMATICS — smaller */}
+            <div className="absolute top-[365px] left-[245px] w-24 h-24 md:w-32 md:h-32
+              bg-scientific-blue/20 backdrop-blur-sm
+              border border-white/35 rounded-full shadow
+              flex items-center justify-center text-center p-3
+              transition-transform duration-700 hover:scale-105
+              animate-float animation-delay-4000">
+              <span className="font-sans font-medium text-[10px] md:text-xs
+                text-scientific-teal/70 tracking-wider uppercase">
+                Bioinformatics
+              </span>
+            </div>
+
+            {/* ONCOLOGY — least prominent */}
+            <div className="absolute top-[390px] left-[360px] w-20 h-20 md:w-28 md:h-28
+              bg-scientific-rose/20 backdrop-blur-sm
+              border border-white/30 rounded-full shadow-sm
+              flex items-center justify-center text-center p-3
+              transition-transform duration-700 hover:scale-105
+              animate-float animation-delay-2000">
+              <span className="font-sans font-medium text-[10px] md:text-xs
+                text-scientific-teal/65 tracking-wider uppercase">
+                Oncology
+              </span>
+            </div>
+
           </div>
         </div>
         
