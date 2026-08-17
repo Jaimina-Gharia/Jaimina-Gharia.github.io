@@ -91,7 +91,7 @@ const Hero = () => {
           <div className="relative w-[500px] h-[500px] max-w-full">
 
             {/* MOLECULAR BIOLOGY — prominent */}
-            <div className="absolute top-4 left-[180px] w-36 h-36 md:w-44 md:h-44
+            <div className="absolute top-1 left-[160px] w-36 h-36 md:w-44 md:h-44
               bg-scientific-lavender/40 backdrop-blur-sm
               border border-white/50 rounded-full shadow-md
               flex items-center justify-center text-center p-4
@@ -103,7 +103,7 @@ const Hero = () => {
               </span>
             </div>
 
-            {/* CELL BIOLOGY — medium-large */}
+            {/* BIOINFORMATICS — medium-large */}
             <div className="absolute top-[145px] left-10 w-32 h-32 md:w-40 md:h-40
               bg-scientific-blue/30 backdrop-blur-sm
               border border-white/40 rounded-full shadow
@@ -112,7 +112,7 @@ const Hero = () => {
               animate-float animation-delay-4000">
               <span className="font-sans font-medium text-xs md:text-sm
                 text-scientific-teal/80 tracking-wider uppercase">
-                Cell<br />Biology
+                Bioinformatics
               </span>
             </div>
 
@@ -138,11 +138,11 @@ const Hero = () => {
               animate-float animation-delay-2000">
               <span className="font-sans font-medium text-xs md:text-sm
                 text-scientific-teal/75 tracking-wider uppercase">
-                Bioinformatics
+                Metabolomics
               </span>
             </div>
 
-            {/* BIOINFORMATICS — smaller */}
+            {/* CELL BIOLOGY — smaller */}
             <div className="absolute top-[365px] left-[245px] w-24 h-24 md:w-32 md:h-32
               bg-scientific-blue/20 backdrop-blur-sm
               border border-white/35 rounded-full shadow
@@ -151,7 +151,7 @@ const Hero = () => {
               animate-float animation-delay-4000">
               <span className="font-sans font-medium text-[10px] md:text-xs
                 text-scientific-teal/70 tracking-wider uppercase">
-                Metabolomics
+                Cell<br />Biology
               </span>
             </div>
 

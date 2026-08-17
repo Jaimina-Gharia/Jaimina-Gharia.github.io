@@ -32,6 +32,7 @@ const About = () => {
                 {profileData.about}
               </p>
               
+              <template>
               <div className="bg-white/50 rounded-xl p-6 border border-white/60 shadow-sm">
                 <h3 className="text-sm font-semibold tracking-wide text-scientific-teal uppercase mb-4">
                   Research Focus
@@ -44,6 +45,7 @@ const About = () => {
                   ))}
                 </div>
               </div>
+                </template>
             </div>
           </div>
         </div>
