@@ -2,7 +2,7 @@ import React from 'react';
 
 const Achievement = () => {
   return (
-    <section id="achievement" className="py-24 scroll-mt-32">
+    <section id="achievement" className="py-24">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <div className="glass-panel p-10 md:p-16 text-center relative overflow-hidden">
           {/* Decorative shapes */}

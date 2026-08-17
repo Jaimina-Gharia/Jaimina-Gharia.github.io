@@ -12,7 +12,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 relative scroll-mt-32">
+    <section id="about" className="py-24 relative">
       <div className="max-w-5xl mx-auto px-6 md:px-12">
         <div className="glass-panel p-8 md:p-12 relative overflow-hidden">
           {/* Subtle background gradient inside the panel */}

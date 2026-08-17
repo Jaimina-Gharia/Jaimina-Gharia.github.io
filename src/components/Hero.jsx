@@ -3,7 +3,7 @@ import { profileData } from '../data/profile';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[95vh] flex items-center justify-center pt-20 overflow-hidden scroll-mt-32">
+    <section id="home" className="relative min-h-[95vh] flex items-center justify-center pt-20 overflow-hidden">
       
       {/* Soft floating background elements to bring back the Carrd layered feel */}
       <div className="absolute top-1/4 -right-12 w-64 h-64 bg-scientific-blue rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob"></div>
@@ -87,8 +87,8 @@ const Hero = () => {
          </template>
         
         {/* Research Interests Visual Composition */}
-        <div className="flex items-center justify-center w-full h-full min-h-[480px] mt-12 md:mt-0">
-          <div className="relative w-[500px] h-[500px] max-w-full">
+        <div className="flex items-center justify-center w-full h-full min-h-[480px] mt-12 md:mt-0 overflow-hidden md:overflow-visible">
+          <div className="relative w-[500px] h-[500px] max-w-full transform scale-[0.6] sm:scale-75 md:scale-100 origin-center">
 
             {/* MOLECULAR BIOLOGY — prominent */}
             <div className="absolute top-1 left-[160px] w-36 h-36 md:w-44 md:h-44

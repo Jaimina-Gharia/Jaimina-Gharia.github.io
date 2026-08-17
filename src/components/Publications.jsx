@@ -5,7 +5,7 @@ const Publications = () => {
   if (!publicationsData || publicationsData.length === 0) return null;
 
   return (
-    <section id="publications" className="py-24 scroll-mt-32">
+    <section id="publications" className="py-24">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <div className="mb-12 text-center">
           <h2 className="text-4xl font-serif text-scientific-teal mb-4">Publications</h2>
@@ -26,17 +26,13 @@ const Publications = () => {
                 {pub.journal}
               </div>
               
-              <div className="flex gap-4">
-                {pub.doi !== "#" && (
-                  <a href={pub.doi} target="_blank" rel="noopener noreferrer" className="px-4 py-1.5 bg-white border border-scientific-teal/10 rounded-full text-xs font-semibold text-scientific-teal shadow-sm hover:bg-scientific-rose/20 transition-colors">
-                    DOI ↗
-                  </a>
-                )}
-                {pub.pubmed !== "#" && (
-                  <a href={pub.pubmed} target="_blank" rel="noopener noreferrer" className="px-4 py-1.5 bg-white border border-scientific-teal/10 rounded-full text-xs font-semibold text-scientific-teal shadow-sm hover:bg-scientific-rose/20 transition-colors">
-                    PubMed ↗
-                  </a>
-                )}
+              <div className="flex flex-wrap gap-2">
+                <a href={pub.doi} target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-white shadow-sm border border-white/50 rounded-md text-xs font-medium text-scientific-teal/80 hover:bg-scientific-rose/10 transition-colors">
+                  DOI ↗
+                </a>
+                <a href={pub.pubmed} target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-white shadow-sm border border-white/50 rounded-md text-xs font-medium text-scientific-teal/80 hover:bg-scientific-rose/10 transition-colors">
+                  PubMed ↗
+                </a>
               </div>
             </div>
           ))}
