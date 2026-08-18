@@ -87,15 +87,14 @@ const Hero = () => {
          </template>
         
         {/* Research Interests Visual Composition */}
-        <div className="flex items-center justify-center w-full h-full min-h-[480px] mt-12 md:mt-0 overflow-hidden md:overflow-visible">
-          <div className="relative w-[500px] h-[500px] max-w-full transform scale-[0.6] sm:scale-75 md:scale-100 origin-center">
-
+        <div className="flex items-start md:items-center justify-center w-full h-[370px] sm:h-[420px] md:h-[500px] mt-10 md:mt-0 overflow-visible">
+          <div className="relative w-[500px] min-w-[500px] h-[500px] min-h-[500px] shrink-0 transform scale-[0.75] sm:scale-[0.85] md:scale-100 origin-top md:origin-center -translate-x- -translate-y-8 md:translate-x-0 md:translate-y-0">
             {/* MOLECULAR BIOLOGY — prominent */}
-            <div className="absolute top-1 left-[160px] w-36 h-36 md:w-44 md:h-44
+            <div className="absolute top-[4px] left-[160px] w-[176px] h-[176px] 
               bg-scientific-lavender/40 backdrop-blur-sm
               border border-white/50 rounded-full shadow-md
               flex items-center justify-center text-center p-4
-              transition-transform duration-700 hover:scale-105
+              transition-transform duration-700 hover:scale-105 active:scale-105
               animate-float animation-delay-2000">
               <span className="font-sans font-medium text-sm md:text-base
                 text-scientific-teal/90 tracking-wider uppercase">
@@ -104,11 +103,11 @@ const Hero = () => {
             </div>
 
             {/* BIOINFORMATICS — medium-large */}
-            <div className="absolute top-[145px] left-10 w-32 h-32 md:w-40 md:h-40
+            <div className="absolute top-[145px] left-[40px] w-[160px] h-[160px]
               bg-scientific-blue/30 backdrop-blur-sm
               border border-white/40 rounded-full shadow
               flex items-center justify-center text-center p-4
-              transition-transform duration-700 hover:scale-105
+              transition-transform duration-700 hover:scale-105 active:scale-105
               animate-float animation-delay-4000">
               <span className="font-sans font-medium text-xs md:text-sm
                 text-scientific-teal/80 tracking-wider uppercase">
@@ -117,11 +116,11 @@ const Hero = () => {
             </div>
 
             {/* NEUROSCIENCE — largest / primary interest */}
-            <div className="absolute top-[120px] left-[190px] w-52 h-52 md:w-64 md:h-64
+            <div className="absolute top-[120px] left-[190px] w-[256px] h-[256px] 
               bg-white/75 backdrop-blur-md
               border border-white/60 rounded-full shadow-lg
               flex items-center justify-center text-center p-6
-              transition-transform duration-700 hover:scale-105
+              transition-transform duration-700 hover:scale-105 active:scale-105
               animate-float">
               <span className="font-serif text-xl md:text-2xl
                 text-scientific-teal tracking-wide">
@@ -130,11 +129,11 @@ const Hero = () => {
             </div>
 
             {/* METABOLOMICS — medium */}
-            <div className="absolute top-[315px] left-[85px] w-28 h-28 md:w-36 md:h-36
+            <div className="absolute top-[315px] left-[85px] w-[144px] h-[144px] 
               bg-scientific-lavender/25 backdrop-blur-sm
               border border-white/40 rounded-full shadow
               flex items-center justify-center text-center p-4
-              transition-transform duration-700 hover:scale-105
+              transition-transform duration-700 hover:scale-105 active:scale-105
               animate-float animation-delay-2000">
               <span className="font-sans font-medium text-xs md:text-sm
                 text-scientific-teal/75 tracking-wider uppercase">
@@ -143,11 +142,11 @@ const Hero = () => {
             </div>
 
             {/* CELL BIOLOGY — smaller */}
-            <div className="absolute top-[365px] left-[245px] w-24 h-24 md:w-32 md:h-32
+            <div className="absolute top-[365px] left-[245px] w-[128px] h-[128px] 
               bg-scientific-blue/20 backdrop-blur-sm
               border border-white/35 rounded-full shadow
               flex items-center justify-center text-center p-3
-              transition-transform duration-700 hover:scale-105
+              transition-transform duration-700 hover:scale-105  active:scale-105
               animate-float animation-delay-4000">
               <span className="font-sans font-medium text-[10px] md:text-xs
                 text-scientific-teal/70 tracking-wider uppercase">
@@ -156,11 +155,11 @@ const Hero = () => {
             </div>
 
             {/* ONCOLOGY — least prominent */}
-            <div className="absolute top-[390px] left-[360px] w-20 h-20 md:w-28 md:h-28
+            <div className="absolute top-[390px] left-[360px] w-[112px] h-[112px] 
               bg-scientific-rose/20 backdrop-blur-sm
               border border-white/30 rounded-full shadow-sm
               flex items-center justify-center text-center p-3
-              transition-transform duration-700 hover:scale-105
+              transition-transform duration-700 hover:scale-105 active:scale-105
               animate-float animation-delay-2000">
               <span className="font-sans font-medium text-[10px] md:text-xs
                 text-scientific-teal/65 tracking-wider uppercase">
