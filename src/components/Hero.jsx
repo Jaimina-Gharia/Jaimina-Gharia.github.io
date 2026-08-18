@@ -48,49 +48,11 @@ const Hero = () => {
           </div>
         </div>
         
-        
-        {/* Subtle Visual Composition Area */}
-        <template> 
-          <div className="flex flex-col items-center justify-center gap-1 md:gap-2 mt-12 md:mt-0 w-full h-full min-h-[400px]">
-          
-          {/* Top Row */}
-          <div className="flex justify-center w-full pl-0 md:-ml-24">
-            {/* MOLECULAR BIOLOGY: Second largest */}
-            <div className="w-36 h-36 md:w-44 md:h-44 bg-scientific-lavender/40 backdrop-blur-sm border border-white/50 rounded-full shadow-md flex items-center justify-center text-center p-4 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-2000">
-              <span className="font-sans font-medium text-sm md:text-base text-scientific-teal/90 tracking-wider uppercase">Molecular<br/>Biology</span>
-            </div>
-          </div>
-          
-          {/* Middle Row */}
-          <div className="flex flex-row justify-center items-center gap-2 md:gap-3 w-full">
-            
-            {/* CELL BIOLOGY: Medium size */}
-            <div className="w-32 h-32 md:w-40 md:h-40 bg-scientific-blue/30 backdrop-blur-sm border border-white/40 rounded-full shadow flex items-center justify-center text-center p-4 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-4000">
-              <span className="font-sans font-medium text-xs md:text-sm text-scientific-teal/80 tracking-wider uppercase">Cell<br/>Biology</span>
-            </div>
-            
-            {/* NEUROSCIENCE: Largest, most prominent */}
-            <div className="w-48 h-48 md:w-64 md:h-64 bg-white/70 backdrop-blur-md border border-white/60 rounded-full shadow-lg flex items-center justify-center text-center p-6 transform transition-transform duration-1000 hover:scale-105 animate-float">
-              <span className="font-serif text-xl md:text-2xl text-scientific-teal tracking-wide">Neuroscience</span>
-            </div>
-            
-          </div>
-          
-          {/* Bottom Row */}
-          <div className="flex justify-center w-full pr-0 md:-mr-40">
-            {/* ONCOLOGY: Medium size */}
-            <div className="w-32 h-32 md:w-40 md:h-40 bg-scientific-rose/30 backdrop-blur-sm border border-white/40 rounded-full shadow flex items-center justify-center text-center p-4 transform transition-transform duration-1000 hover:scale-105 animate-float animation-delay-2000">
-              <span className="font-sans font-medium text-xs md:text-sm text-scientific-teal/80 tracking-wider uppercase">Oncology</span>
-            </div>
-          </div>
-         </div>
-         </template>
-        
         {/* Research Interests Visual Composition */}
         <div className="flex items-start md:items-center justify-center w-full h-[370px] sm:h-[420px] md:h-[500px] mt-10 md:mt-0 overflow-visible">
-          <div className="relative w-[500px] min-w-[500px] h-[500px] min-h-[500px] shrink-0 transform scale-[0.75] sm:scale-[0.85] md:scale-100 origin-top md:origin-center -translate-x- -translate-y-8 md:translate-x-0 md:translate-y-0">
+          <div className="relative w-[500px] min-w-[500px] h-[500px] min-h-[500px] shrink-0 transform scale-[0.75] sm:scale-[0.85] md:scale-100 origin-top md:origin-center -translate-x-3 -translate-y-7 md:translate-x-0 md:translate-y-0">
             {/* MOLECULAR BIOLOGY — prominent */}
-            <div className="absolute top-[4px] left-[160px] w-[176px] h-[176px] 
+            <div className="absolute -top-[6px] left-[160px] w-[176px] h-[176px] 
               bg-scientific-lavender/40 backdrop-blur-sm
               border border-white/50 rounded-full shadow-md
               flex items-center justify-center text-center p-4
