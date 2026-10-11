@@ -1,0 +1,211 @@
+/* ========================================
+   ANIMATIONS — Scroll reveals & motifs
+   ======================================== */
+
+/* ── Scroll Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--duration-slower) var(--ease-out),
+              transform var(--duration-slower) var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal--left {
+  transform: translateX(-30px);
+}
+
+.reveal--left.is-visible {
+  transform: translateX(0);
+}
+
+.reveal--right {
+  transform: translateX(30px);
+}
+
+.reveal--right.is-visible {
+  transform: translateX(0);
+}
+
+.reveal--scale {
+  transform: scale(0.95);
+}
+
+.reveal--scale.is-visible {
+  transform: scale(1);
+}
+
+/* Stagger children */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+
+.reveal-stagger.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 80ms; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 160ms; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 240ms; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 320ms; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 400ms; }
+.reveal-stagger.is-visible > *:nth-child(7) { transition-delay: 480ms; }
+.reveal-stagger.is-visible > *:nth-child(8) { transition-delay: 560ms; }
+
+/* ── Scientific Grid Background ── */
+.sci-grid-bg {
+  position: relative;
+}
+
+.sci-grid-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, var(--max-width));
+  height: 100%;
+  opacity: 0.03;
+  background-image:
+    repeating-linear-gradient(0deg, var(--color-primary) 0, var(--color-primary) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(90deg, var(--color-primary) 0, var(--color-primary) 1px, transparent 1px, transparent 60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Floating Annotation ── */
+.annotation {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--color-text-caption);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: absolute;
+  writing-mode: vertical-lr;
+  opacity: 0.4;
+}
+
+/* ── Cell Membrane Texture ── */
+.membrane-border {
+  position: relative;
+}
+
+.membrane-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-primary) 0px,
+    var(--color-primary) 4px,
+    transparent 4px,
+    transparent 8px,
+    var(--color-secondary) 8px,
+    var(--color-secondary) 10px,
+    transparent 10px,
+    transparent 16px
+  );
+  opacity: 0.3;
+}
+
+/* ── Pulse Animation ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ── Page Load Animation ── */
+.page-load .hero__label {
+  animation: fadeInUp 0.6s var(--ease-out) 0.1s both;
+}
+
+.page-load .hero__name {
+  animation: fadeInUp 0.6s var(--ease-out) 0.2s both;
+}
+
+.page-load .hero__tagline {
+  animation: fadeInUp 0.6s var(--ease-out) 0.3s both;
+}
+
+.page-load .hero__intro {
+  animation: fadeInUp 0.6s var(--ease-out) 0.4s both;
+}
+
+.page-load .hero__actions {
+  animation: fadeInUp 0.6s var(--ease-out) 0.5s both;
+}
+
+.page-load .hero__current {
+  animation: fadeInUp 0.6s var(--ease-out) 0.6s both;
+}
+
+.page-load .hero__visual {
+  animation: fadeIn 1s var(--ease-out) 0.4s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal--left,
+  .reveal--right,
+  .reveal--scale {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .reveal-stagger > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .page-load .hero__label,
+  .page-load .hero__name,
+  .page-load .hero__tagline,
+  .page-load .hero__intro,
+  .page-load .hero__actions,
+  .page-load .hero__current,
+  .page-load .hero__visual {
+    animation: none;
+    opacity: 1;
+  }
+}

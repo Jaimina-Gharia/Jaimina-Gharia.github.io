@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaimina V. Gharia — Biotechnology Researcher</title>
+  <meta name="description" content="Research portfolio of Jaimina V. Gharia — biotechnology undergraduate exploring molecular biology, cellular mechanisms, and the foundations of neuroscience.">
+  <meta name="author" content="Jaimina V. Gharia">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jaimina V. Gharia — Biotechnology Researcher">
+  <meta property="og:description" content="A curiosity for the unseen mechanisms of life. Research portfolio exploring molecular biology, cellular behavior, and neuroscience.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Home">J.V. <span>Gharia</span></a>
+      <div class="nav__links" id="nav-links" role="menubar">
+        <a href="#home" class="nav__link is-active" role="menuitem">Home</a>
+        <a href="#research" class="nav__link" role="menuitem">Research</a>
+        <a href="#projects" class="nav__link" role="menuitem">Projects</a>
+        <a href="#publications" class="nav__link" role="menuitem">Publications</a>
+        <a href="#about" class="nav__link" role="menuitem">About</a>
+        <a href="#contact" class="nav__link" role="menuitem">CV</a>
+      </div>
+      <div class="nav__actions">
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav__mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════
+       HERO
+       ═══════════════════════════════════ -->
+  <section class="hero section" id="home">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <div class="hero__label">
+            <span>Biotechnology &amp; Molecular Biology</span>
+          </div>
+          <h1 class="hero__name">Jaimina V.<br>Gharia</h1>
+          <p class="hero__tagline">Biotechnology Undergraduate · Aspiring Neuroscience Researcher</p>
+          <p class="hero__intro">
+            I am fascinated by the mechanisms that make living systems work — from molecular interactions and cellular behavior to the complexity of neural communication. My research journey brings together experimental biology, analytical techniques, and computational thinking, driven by a curiosity for the processes we cannot see.
+          </p>
+          <div class="hero__actions">
+            <a href="#research" class="btn btn--primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              Explore My Research
+            </a>
+            <a href="#contact" class="btn btn--outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              View My CV
+            </a>
+          </div>
+          <p class="hero__current">Currently exploring the cellular and molecular foundations of neuroscience.</p>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__canvas-container">
+            <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+          </div>
+          <div class="hero__grid-lines" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SIGNATURE STATEMENT
+       ═══════════════════════════════════ -->
+  <section class="signature section reveal" aria-label="Signature statement">
+    <div class="container">
+      <blockquote class="signature__quote">
+        The most fascinating stories in biology are often written at scales we cannot see.
+      </blockquote>
+      <div class="signature__decoration" aria-hidden="true">
+        <div class="signature__line"></div>
+        <div class="signature__dot"></div>
+        <div class="signature__line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       RESEARCH JOURNEY
+       ═══════════════════════════════════ -->
+  <section class="section section--alt sci-grid-bg" id="research">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Research Experience</span>
+        <h2 class="section-title">A Journey Through Biological Systems</h2>
+        <p class="section-subtitle">A chronological map of my research experiences — from environmental analysis to molecular biology and cellular mechanisms.</p>
+      </div>
+
+      <div class="timeline reveal" style="margin-top: var(--space-3xl);">
+
+        <!-- Timeline Item 1: CHARUSAT -->
+        <div class="timeline-item">
+          <div class="timeline-item__dot" aria-hidden="true"></div>
+          <div class="timeline-item__card">
+            <span class="timeline-item__date">June 2026</span>
+            <h3 class="timeline-item__role">Research Intern</h3>
+            <p class="timeline-item__org">Charotar University of Science and Technology (CHARUSAT), Anand</p>
+            <p class="timeline-item__focus">
+              Focused on analytical chemistry and metabolomics, operating HPLC and LC-MS/MS instrumentation for compound separation, structural characterization, and qualitative analysis of mushroom samples, alongside bioinformatics analysis of mass spectrometry data.
+            </p>
+            <div class="timeline-item__techniques">
+              <span class="tag">HPLC</span>
+              <span class="tag">LC-MS</span>
+              <span class="tag">LC-MS/MS</span>
+              <span class="tag">Metabolite Analysis</span>
+              <span class="tag">Bioinformatics (R)</span>
+            </div>
+            <button class="expand-trigger" aria-expanded="false" aria-controls="research-charusat">
+              Research details
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="expandable" id="research-charusat">
+              <p class="timeline-item__focus">
+                Operated HPLC for the separation and quantification of compounds from mushroom extract. Utilized advanced LC-MS and LC-MS/MS instrumentation to perform structural characterization and qualitative analysis of mushroom samples. Analyzed mass spectrometry data to identify unknown metabolites and impurities using R.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: GSFC Animal Tissue Culture Lab -->
+        <div class="timeline-item">
+          <div class="timeline-item__dot" aria-hidden="true"></div>
+          <div class="timeline-item__card">
+            <span class="timeline-item__date">June 2025 – May 2026</span>
+            <h3 class="timeline-item__role">Research Intern</h3>
+            <p class="timeline-item__org">Animal Tissue Culture Lab, GSFC University, Vadodara</p>
+            <p class="timeline-item__focus">
+              Extended research internship exploring molecular biology techniques and mitochondrial assays, with hands-on experience in mammalian cell culture and molecular characterization.
+            </p>
+            <div class="timeline-item__techniques">
+              <span class="tag">Western Blotting</span>
+              <span class="tag">JC-1 Staining</span>
+              <span class="tag">TMRM Assay</span>
+              <span class="tag">RNA Isolation</span>
+              <span class="tag">cDNA Synthesis</span>
+              <span class="tag">PCR</span>
+              <span class="tag">Fluorescence Microscopy</span>
+            </div>
+            <button class="expand-trigger" aria-expanded="false" aria-controls="research-gsfc">
+              Research details
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="expandable" id="research-gsfc">
+              <p class="timeline-item__focus">
+                Executed western blotting workflows for targeted protein separation and analysis. Performed JC-1 and TMRM staining assays utilizing fluorescence microscopy to evaluate mitochondrial membrane potential. Conducted total RNA isolation, cDNA synthesis, and downstream PCR amplification. Maintained mammalian cell line cultures and conducted cell viability assays including MTT and Clonogenic assay.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3: MSU Biochemistry -->
+        <div class="timeline-item">
+          <div class="timeline-item__dot" aria-hidden="true"></div>
+          <div class="timeline-item__card">
+            <span class="timeline-item__date">December 2025</span>
+            <h3 class="timeline-item__role">Research Intern</h3>
+            <p class="timeline-item__org">Biochemistry Department, The Maharaja Sayajirao University of Baroda (MSU Baroda)</p>
+            <p class="timeline-item__focus">
+              Gained experience in western blotting, fluorescence microscopy assays, and molecular biology techniques at a leading research institution.
+            </p>
+            <div class="timeline-item__techniques">
+              <span class="tag">Western Blotting</span>
+              <span class="tag">Fluorescence Microscopy</span>
+              <span class="tag">JC-1 &amp; TMRM Staining</span>
+              <span class="tag">RNA Isolation</span>
+              <span class="tag">cDNA Synthesis</span>
+              <span class="tag">PCR</span>
+            </div>
+            <button class="expand-trigger" aria-expanded="false" aria-controls="research-msu-biochem">
+              Research details
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="expandable" id="research-msu-biochem">
+              <p class="timeline-item__focus">
+                Executed western blotting workflows for targeted protein separation and analysis. Performed JC-1 and TMRM staining assays utilizing fluorescence microscopy to evaluate mitochondrial membrane potential. Performed total RNA isolation, cDNA synthesis, and downstream PCR amplification.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4: Chronobiology Lab -->
+        <div class="timeline-item">
+          <div class="timeline-item__dot" aria-hidden="true"></div>
+          <div class="timeline-item__card">
+            <span class="timeline-item__date">December 2024 – February 2025</span>
+            <h3 class="timeline-item__role">Research Intern</h3>
+            <p class="timeline-item__org">Chronobiology Lab, Zoology Department, MSU Baroda</p>
+            <p class="timeline-item__focus">
+              Explored molecular biology and chronobiology, working with plasmid isolation, transfection, transformation, and cell culture, while gaining insight into behavioral and physiological rhythms.
+            </p>
+            <div class="timeline-item__techniques">
+              <span class="tag">Plasmid Isolation</span>
+              <span class="tag">Transfection</span>
+              <span class="tag">Transformation</span>
+              <span class="tag">Microbial Culture</span>
+              <span class="tag">Cell Culture</span>
+            </div>
+            <button class="expand-trigger" aria-expanded="false" aria-controls="research-chrono">
+              Research details
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="expandable" id="research-chrono">
+              <p class="timeline-item__focus">
+                Mastered and applied molecular biology techniques including plasmid isolation, microbial culture, transfection, and transformation. Assisted with cell culture and basic animal handling under supervision, gaining insight into behavioral and physiological rhythms studied in chronobiology research.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 5: ETP Laboratory -->
+        <div class="timeline-item">
+          <div class="timeline-item__dot" aria-hidden="true"></div>
+          <div class="timeline-item__card">
+            <span class="timeline-item__date">June – July 2024</span>
+            <h3 class="timeline-item__role">Intern</h3>
+            <p class="timeline-item__org">ETP Laboratory, GSFC Ltd.</p>
+            <p class="timeline-item__focus">
+              Analyzed effluent for key environmental parameters and gained hands-on experience in routine laboratory testing and sample analysis.
+            </p>
+            <div class="timeline-item__techniques">
+              <span class="tag">BOD Analysis</span>
+              <span class="tag">COD Analysis</span>
+              <span class="tag">Suspended Solids</span>
+              <span class="tag">Environmental Testing</span>
+            </div>
+            <button class="expand-trigger" aria-expanded="false" aria-controls="research-etp">
+              Research details
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="expandable" id="research-etp">
+              <p class="timeline-item__focus">
+                Analyzed effluent for key environmental parameters, including BOD, COD, and suspended solids (SS). Gained hands-on experience in routine laboratory testing and sample analysis within an industrial effluent treatment context.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       PROJECTS
+       ═══════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Research Projects</span>
+        <h2 class="section-title">Questions I Have Explored</h2>
+        <p class="section-subtitle">Each project represents a question that drew me deeper into understanding biological systems.</p>
+      </div>
+
+      <div class="projects-grid" style="margin-top: var(--space-3xl);">
+
+        <!-- Project 1: Scratch Assay -->
+        <div class="project-card reveal">
+          <div class="project-card__visual">
+            <canvas data-visual="scratch" aria-hidden="true"></canvas>
+            <span class="project-card__number font-mono">01</span>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Computational Biology</span>
+            <h3 class="project-card__title">Scratch Assay Analysis Software</h3>
+            <p class="project-card__desc">
+              A collaborative project focused on developing software to quantify wound-healing assay results, improving reproducibility and data analysis accuracy in cell migration studies.
+            </p>
+            <div style="display: flex; align-items: center; gap: var(--space-md); flex-wrap: wrap;">
+              <span class="project-card__status project-card__status--ongoing">
+                <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+                Collaborative
+              </span>
+              <button class="expand-trigger" aria-expanded="false">
+                View details
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="expandable project-card__details">
+            <h4>Objective</h4>
+            <p>Co-developing a software tool for quantifying results of wound healing assays, improving reproducibility and data analysis accuracy.</p>
+            <h4>Methods &amp; Techniques</h4>
+            <p>Image analysis algorithms, computational quantification of cell migration, software development for reproducible assay analysis.</p>
+            <h4>My Contribution</h4>
+            <p>Contributing to the development and validation of the analysis tool as part of a collaborative research effort.</p>
+            <div class="card__tags">
+              <span class="tag tag--outline">Image Analysis</span>
+              <span class="tag tag--outline">Cell Migration</span>
+              <span class="tag tag--outline">Wound Healing</span>
+              <span class="tag tag--outline">Software Development</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Metagenomics -->
+        <div class="project-card reveal">
+          <div class="project-card__visual">
+            <canvas data-visual="metagenomics" aria-hidden="true"></canvas>
+            <span class="project-card__number font-mono">02</span>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Metagenomics</span>
+            <h3 class="project-card__title">Metagenomics Analysis of Biogas Plant Samples</h3>
+            <p class="project-card__desc">
+              Analyzing metagenomic sequencing data to investigate microbial diversity in biogas systems, with a manuscript currently in preparation.
+            </p>
+            <div style="display: flex; align-items: center; gap: var(--space-md); flex-wrap: wrap;">
+              <span class="project-card__status project-card__status--preparation">
+                <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+                Manuscript in Preparation
+              </span>
+              <button class="expand-trigger" aria-expanded="false">
+                View details
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="expandable project-card__details">
+            <h4>Objective</h4>
+            <p>Investigating microbial diversity in biogas plant samples through metagenomic sequencing data analysis.</p>
+            <h4>Methods &amp; Techniques</h4>
+            <p>Metagenomic sequencing, bioinformatics analysis, microbial community profiling, data interpretation.</p>
+            <h4>Current Status</h4>
+            <p>Data analysis complete. Manuscript co-preparation is currently in progress, detailing microbial diversity findings in biogas systems.</p>
+            <div class="card__tags">
+              <span class="tag tag--outline">Metagenomics</span>
+              <span class="tag tag--outline">Bioinformatics</span>
+              <span class="tag tag--outline">Microbial Diversity</span>
+              <span class="tag tag--outline">Biogas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Plant Growth -->
+        <div class="project-card reveal">
+          <div class="project-card__visual">
+            <canvas data-visual="plant" aria-hidden="true"></canvas>
+            <span class="project-card__number font-mono">03</span>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Microbiology</span>
+            <h3 class="project-card__title">Plant Growth-Promoting Microbial Isolates</h3>
+            <p class="project-card__desc">
+              Designed and conducted pot experiments to evaluate the growth-promoting potential of selected microbial isolates on plant development.
+            </p>
+            <div style="display: flex; align-items: center; gap: var(--space-md); flex-wrap: wrap;">
+              <span class="project-card__status project-card__status--completed">
+                <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+                Completed
+              </span>
+              <button class="expand-trigger" aria-expanded="false">
+                View details
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="expandable project-card__details">
+            <h4>Objective</h4>
+            <p>Evaluating the growth-promoting potential of selected microbial isolates through controlled pot experiments.</p>
+            <h4>Methods &amp; Techniques</h4>
+            <p>Microbial isolation and culture, pot experiment design, plant growth measurement, data analysis.</p>
+            <div class="card__tags">
+              <span class="tag tag--outline">Microbial Isolates</span>
+              <span class="tag tag--outline">Pot Experiments</span>
+              <span class="tag tag--outline">Plant Growth</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Eggplant -->
+        <div class="project-card reveal">
+          <div class="project-card__visual">
+            <canvas data-visual="eggplant" aria-hidden="true"></canvas>
+            <span class="project-card__number font-mono">04</span>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Plant Tissue Culture</span>
+            <h3 class="project-card__title">Shoot Induction &amp; Regeneration in Eggplant</h3>
+            <p class="project-card__desc">
+              Optimized hormone treatments for seed-based tissue culture to induce shoot formation and regenerate whole plants from eggplant explants.
+            </p>
+            <div style="display: flex; align-items: center; gap: var(--space-md); flex-wrap: wrap;">
+              <span class="project-card__status project-card__status--completed">
+                <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+                Completed
+              </span>
+              <button class="expand-trigger" aria-expanded="false">
+                View details
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="expandable project-card__details">
+            <h4>Objective</h4>
+            <p>Exploring hormone treatments for shoot induction and plant regeneration using seed-based tissue culture techniques in eggplant.</p>
+            <h4>Methods &amp; Techniques</h4>
+            <p>Tissue culture, hormone optimization, shoot induction protocols, plant regeneration, aseptic technique.</p>
+            <div class="card__tags">
+              <span class="tag tag--outline">Tissue Culture</span>
+              <span class="tag tag--outline">Hormone Optimization</span>
+              <span class="tag tag--outline">Shoot Induction</span>
+              <span class="tag tag--outline">Regeneration</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       PUBLICATIONS
+       ═══════════════════════════════════ -->
+  <section class="section section--alt" id="publications">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Publications</span>
+        <h2 class="section-title">Contributing to the Scientific Conversation</h2>
+      </div>
+
+      <div class="pub-feature reveal" style="margin-top: var(--space-2xl);">
+        <div class="pub-feature__header">
+          <span class="pub-feature__journal">World Journal of Clinical Oncology · Peer-Reviewed</span>
+          <h3 class="pub-feature__title">Revolutionizing Cancer Care: Bioprinting Prostate Cancer Stem Cells for Targeted Treatments</h3>
+        </div>
+        <div class="pub-feature__body">
+          <div class="pub-feature__meta">
+            <div class="pub-feature__meta-item">
+              <span class="pub-feature__meta-label">Journal</span>
+              <span class="pub-feature__meta-value">World Journal of Clinical Oncology</span>
+            </div>
+            <div class="pub-feature__meta-item">
+              <span class="pub-feature__meta-label">Type</span>
+              <span class="pub-feature__meta-value">Review Article</span>
+            </div>
+            <div class="pub-feature__meta-item">
+              <span class="pub-feature__meta-label">Status</span>
+              <span class="pub-feature__meta-value" style="color: var(--color-primary);">Published</span>
+            </div>
+          </div>
+          <p style="color: var(--color-text-secondary); line-height: var(--lh-body); margin-bottom: var(--space-lg);">
+            A peer-reviewed article exploring the intersection of 3D bioprinting technology and cancer stem cell research, focusing on the potential for personalized, targeted treatment approaches in prostate cancer.
+          </p>
+          <div class="pub-feature__actions">
+            <a href="#" class="btn btn--primary btn--small" target="_blank" rel="noopener" aria-label="Read on PubMed — link to be updated">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Read on PubMed
+            </a>
+            <a href="#" class="btn btn--outline btn--small" target="_blank" rel="noopener" aria-label="View DOI — link to be updated">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              View DOI
+            </a>
+          </div>
+          <p class="font-mono" style="font-size: 0.7rem; color: var(--color-text-caption); margin-top: var(--space-md);">
+            <!-- Replace # with actual DOI and PubMed links -->
+            Note: Publication links will be updated with exact DOI and PubMed URLs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONFERENCES
+       ═══════════════════════════════════ -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Conference Presentations</span>
+        <h2 class="section-title">Ideas Shared Beyond the Laboratory</h2>
+      </div>
+
+      <div class="reveal" style="margin-top: var(--space-2xl);">
+
+        <article class="conf-item">
+          <span class="conf-item__date">Dec 20, 2025</span>
+          <div class="conf-item__content">
+            <h3 class="conf-item__title">Evaluating the Effect of AR Antagonists on Cellular Proliferation in Prostate Cancer</h3>
+            <p class="conf-item__venue">Presented at Charotar University of Science and Technology (CHARUSAT), Anand</p>
+          </div>
+          <span class="conf-item__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </span>
+        </article>
+
+        <article class="conf-item">
+          <span class="conf-item__date">Apr 10, 2025</span>
+          <div class="conf-item__content">
+            <h3 class="conf-item__title">Comparative Insights into CRISPR-Cas9, Cas12, and Cas13 in Cancer Therapy and Addressing Off-target Challenges</h3>
+            <p class="conf-item__venue">Presented at Pandit Deendayal Energy University (PDEU), Gandhinagar</p>
+          </div>
+          <span class="conf-item__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </span>
+        </article>
+
+        <article class="conf-item">
+          <span class="conf-item__date">Mar 4, 2025</span>
+          <div class="conf-item__content">
+            <h3 class="conf-item__title">Advances in Personalized Medicine for HPV-related Cancers</h3>
+            <p class="conf-item__venue">Presented at HPV &amp; Cancer: Exploring Advances in Prevention and Care Symposium, Vadodara</p>
+          </div>
+          <span class="conf-item__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       NEUROSCIENCE — THE NEXT QUESTION
+       ═══════════════════════════════════ -->
+  <section class="section section--neuro neuro-section" id="neuroscience">
+    <div class="neuro-section__bg" aria-hidden="true">
+      <canvas id="neuro-canvas"></canvas>
+    </div>
+    <div class="container neuro-section__content">
+      <div class="reveal">
+        <span class="section-label">The Next Question</span>
+        <h2 class="section-title">From Cellular Mechanisms to Neural Complexity</h2>
+      </div>
+
+      <blockquote class="neuro-section__statement reveal">
+        "I want to understand how molecular events become cellular behavior, how cellular behavior shapes neural circuits, and how disruptions at these levels may contribute to neurological disease."
+      </blockquote>
+
+      <div class="neuro-section__topics reveal-stagger">
+        <div class="neuro-topic">
+          <h3 class="neuro-topic__title">Current Research Interests</h3>
+          <p class="neuro-topic__desc">
+            Neurobiology, cellular signaling, neurodegeneration, the molecular basis of neural communication, and how cellular mechanisms translate to neural function.
+          </p>
+        </div>
+        <div class="neuro-topic">
+          <h3 class="neuro-topic__title">Exploring</h3>
+          <p class="neuro-topic__desc">
+            How my foundation in molecular biology, cell culture, and analytical techniques applies to understanding neuronal behavior and neurological systems.
+          </p>
+        </div>
+        <div class="neuro-topic">
+          <h3 class="neuro-topic__title">Future Dissertation Interests</h3>
+          <p class="neuro-topic__desc">
+            Pursuing a neuroscience dissertation focusing on neurobiology, cellular signaling, or neurodegeneration — building on my experimental and computational skills.
+          </p>
+        </div>
+        <div class="neuro-topic">
+          <h3 class="neuro-topic__title">Open Questions</h3>
+          <p class="neuro-topic__desc">
+            How do disruptions in cellular signaling pathways contribute to neurological disorders? How can molecular-level insights inform our understanding of complex neural systems?
+          </p>
+        </div>
+      </div>
+
+      <p class="font-mono" style="font-size: var(--fs-xs); color: rgba(232, 230, 225, 0.4); margin-top: var(--space-2xl); text-align: center;">
+        These are developing interests, not completed research projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       TECHNICAL SKILLS
+       ═══════════════════════════════════ -->
+  <section class="section section--alt" id="skills">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Research Toolkit</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Methods, instruments, and computational tools I have worked with across my research experiences.</p>
+      </div>
+
+      <div style="margin-top: var(--space-3xl);">
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category__title">
+            <svg class="skill-category__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            Molecular &amp; Cellular Biology
+          </h3>
+          <div class="skill-category__tags">
+            <span class="tag">Mammalian Cell Culture</span>
+            <span class="tag">Western Blotting</span>
+            <span class="tag">DNA/RNA Isolation</span>
+            <span class="tag">cDNA Synthesis</span>
+            <span class="tag">PCR</span>
+            <span class="tag">Transfection</span>
+            <span class="tag">Transformation</span>
+            <span class="tag">Microbial Culture</span>
+            <span class="tag">Plasmid Isolation</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category__title">
+            <svg class="skill-category__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            Analytical Techniques
+          </h3>
+          <div class="skill-category__tags">
+            <span class="tag tag--accent">HPLC</span>
+            <span class="tag tag--accent">LC-MS</span>
+            <span class="tag tag--accent">LC-MS/MS</span>
+            <span class="tag tag--accent">Metabolite Analysis</span>
+            <span class="tag tag--accent">Fluorescence Microscopy</span>
+            <span class="tag tag--accent">Phase-Contrast Microscopy</span>
+            <span class="tag tag--accent">JC-1 Staining</span>
+            <span class="tag tag--accent">TMRM Staining</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category__title">
+            <svg class="skill-category__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Computational &amp; Analytical Skills
+          </h3>
+          <div class="skill-category__tags">
+            <span class="tag tag--neuro">R</span>
+            <span class="tag tag--neuro">Python</span>
+            <span class="tag tag--neuro">Bioinformatics</span>
+            <span class="tag tag--neuro">LC-MS Data Analysis</span>
+            <span class="tag tag--neuro">Image Analysis</span>
+            <span class="tag tag--neuro">Data Interpretation</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category__title">
+            <svg class="skill-category__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Other Laboratory Exposure
+          </h3>
+          <div class="skill-category__tags">
+            <span class="tag tag--outline">BOD Analysis</span>
+            <span class="tag tag--outline">COD Analysis</span>
+            <span class="tag tag--outline">Suspended Solids Analysis</span>
+            <span class="tag tag--outline">Routine Laboratory Testing</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       EDUCATION & ACHIEVEMENTS
+       ═══════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+
+      <div class="reveal" style="margin-top: var(--space-2xl);">
+        <div class="edu-card">
+          <div class="edu-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <h3 class="edu-card__institution">GSFC University, Vadodara</h3>
+            <p class="edu-card__degree">Bachelor of Science (Honours) in Biotechnology</p>
+            <div class="edu-card__meta">
+              <div class="edu-card__meta-item">
+                <span class="edu-card__meta-label">CGPA</span>
+                <span class="edu-card__meta-value">7.94 / 10</span>
+              </div>
+              <div class="edu-card__meta-item">
+                <span class="edu-card__meta-label">Location</span>
+                <span class="edu-card__meta-value">Vadodara, Gujarat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievement">
+          <div class="achievement__icon" aria-hidden="true">★</div>
+          <div class="achievement__text">
+            <h4 class="achievement__title">Student of the Year</h4>
+            <p class="achievement__subtitle">GSFC University · 2025–2026 — Conferred in recognition of outstanding academic excellence, consistent curricular and co-curricular achievements, and exemplary discipline.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       BEYOND THE BENCH
+       ═══════════════════════════════════ -->
+  <section class="section section--alt beyond">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Personal</span>
+        <h2 class="section-title">Beyond the Bench</h2>
+        <p class="beyond__intro">
+          Research is shaped by curiosity, creativity, and the way we approach complex questions. This space is for the interests, reflections, and ideas that exist beyond the laboratory — the thinking that quietly informs how I see the world.
+        </p>
+      </div>
+
+      <div class="beyond__grid reveal-stagger">
+        <div class="beyond__item">
+          <div class="beyond__item-icon" aria-hidden="true">✍</div>
+          <h3 class="beyond__item-title">Writing &amp; Reflections</h3>
+          <p class="beyond__item-desc">Scientific reflections, notes on research papers, and thoughts on the questions that drive my curiosity.</p>
+        </div>
+        <div class="beyond__item">
+          <div class="beyond__item-icon" aria-hidden="true">📖</div>
+          <h3 class="beyond__item-title">Reading</h3>
+          <p class="beyond__item-desc">Notes on books and research papers that have shaped my thinking about biology, neuroscience, and the natural world.</p>
+        </div>
+        <div class="beyond__item">
+          <div class="beyond__item-icon" aria-hidden="true">🔬</div>
+          <h3 class="beyond__item-title">Creative Projects</h3>
+          <p class="beyond__item-desc">A space for creative explorations that connect science, visualization, and ideas worth sharing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONTACT
+       ═══════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <h2 class="contact__title">Curiosity grows through collaboration.</h2>
+        <p class="contact__subtitle">
+          I am always interested in connecting with researchers, exploring new scientific questions, and discovering opportunities to learn and contribute.
+        </p>
+      </div>
+
+      <div class="contact__links reveal-stagger">
+        <a href="mailto:jvgharia@gmail.com" class="contact__link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          jvgharia@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/jaimina-gharia" class="contact__link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="#" class="contact__link" aria-label="ORCID — link to be updated">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+          ORCID
+        </a>
+        <a href="#" class="contact__link" aria-label="Google Scholar — link to be updated">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Google Scholar
+        </a>
+      </div>
+
+      <div class="contact__cv reveal">
+        <a href="CV_Jaimina Gharia.pdf" class="btn btn--primary" download aria-label="Download CV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        &copy; 2026 <span>Jaimina V. Gharia</span> · A curiosity for the unseen mechanisms of life.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/canvas.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
